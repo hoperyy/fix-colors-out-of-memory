@@ -1,0 +1,18 @@
+{
+  "name": "fix-colors-oom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "recursive-readdir-sync": "^1.0.6"
+  }
+}
