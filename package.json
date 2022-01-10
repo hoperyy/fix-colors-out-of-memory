@@ -1,12 +1,16 @@
 {
   "name": "fix-colors-out-of-memory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "tsw": "tsc -w",
     "tsc": "tsc",
     "test": "node test/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoperyy/fix-colors-out-of-memory"
   },
   "keywords": ["colors", "out-of-memory", "heap out of memory"],
   "author": "",
