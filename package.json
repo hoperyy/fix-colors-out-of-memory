@@ -6,7 +6,6 @@
   "scripts": {
     "tsw": "tsc -w",
     "tsc": "tsc",
-    "prepublishOnly": "tsc",
     "test": "node test/index"
   },
   "keywords": ["colors", "out-of-memory", "heap out of memory"],
