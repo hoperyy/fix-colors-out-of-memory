@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "tsc",
+    "test": "node test/index"
   },
   "author": "",
   "license": "ISC",

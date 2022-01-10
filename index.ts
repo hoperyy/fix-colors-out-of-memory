@@ -15,7 +15,7 @@ module['exports'] = colors;
 //
 //
 require('./extendStringPrototype')();
-            `;
+`;
 
 function fixFolder(folderPath) {
     const files = readdirSync(folderPath).filter(item => item.indexOf('/colors/lib/index.js') !== -1);
@@ -26,11 +26,13 @@ function fixFolder(folderPath) {
 }
 
 function fixFile(filePath) {
-    const oldContent = fs.readFileSync(filePath, 'utf-8');
+    if (fs.existsSync(filePath)) {
+        const oldContent = fs.readFileSync(filePath, 'utf-8');
         
-    if (oldContent.indexOf(`am = require('../lib/custom/american')`) !== -1 || oldContent.indexOf('i < Infinity; i++') !== -1) {
-        fs.writeFileSync(filePath, newContent);
-        console.log('[fix-colors-oom] fix colors oom: ', filePath);
+        if (oldContent.indexOf(`am = require('../lib/custom/american')`) !== -1 || oldContent.indexOf('i < Infinity; i++') !== -1) {
+            fs.writeFileSync(filePath, newContent);
+            console.log('[fix-colors-oom] fix colors oom: ', filePath);
+        }
     }
 }
 
