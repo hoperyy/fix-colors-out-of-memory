@@ -1,5 +1,5 @@
 {
-  "name": "fix-colors-oom",
+  "name": "fix-colors-out-of-memory",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,7 @@
     "prepublishOnly": "tsc",
     "test": "node test/index"
   },
+  "keywords": ["colors", "out-of-memory", "heap out of memory"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
