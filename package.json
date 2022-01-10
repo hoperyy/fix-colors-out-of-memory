@@ -6,6 +6,7 @@
   "scripts": {
     "tsw": "tsc -w",
     "tsc": "tsc",
+    "prepublishOnly": "npm run tsc",
     "test": "node test/index"
   },
   "repository": {
