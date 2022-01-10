@@ -36,7 +36,4 @@ function fixFile(filePath) {
     }
 }
 
-module.exports = {
-    fixFolder,
-    fixFile,
-};
+export { fixFolder, fixFile };

@@ -12,4 +12,3 @@ module['exports'] = colors;
 //
 //
 require('./extendStringPrototype')();
-            
