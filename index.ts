@@ -31,7 +31,7 @@ function fixFile(filePath) {
         
         if (oldContent.indexOf(`am = require('../lib/custom/american')`) !== -1 || oldContent.indexOf('i < Infinity; i++') !== -1) {
             fs.writeFileSync(filePath, newContent);
-            console.log('[fix-colors-oom] fix colors oom: ', filePath);
+            console.log('[fix-colors-out-of-memory] fix colors oom: ', filePath);
         }
     }
 }
