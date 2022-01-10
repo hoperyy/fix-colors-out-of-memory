@@ -37,7 +37,7 @@ fixColors.js
 
 ```js
 const path = require('path');
-const fixColorsOom = require('fix-colors-oom');
+const fixColorsOom = require('fix-colors-out-of-memory');
 const nodeModulesFolder = path.join(__dirname, 'node_modules');
 
 fixColorsOom.fixFolder(nodeModulesFolder);
